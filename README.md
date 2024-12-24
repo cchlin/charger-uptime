@@ -52,3 +52,9 @@ The main operation is in `Station` class. Each statoin stores charger and record
 
 ##### calculate uptime
 First I sort the records using Java's built in sort method I think it is O(nlogn) time. Then single pass through the sorted list to calculate the uptime that would be O(n). But it needs O(n) time to add all the records together from chargers' lists first.
+
+##### Tests
+The test files test:
+- valid input cases
+- invalid input cases (end time earlier than start time, from file content format ...)
+- edge cases (overlapping intervals, gaps)
