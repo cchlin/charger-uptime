@@ -56,5 +56,5 @@ First I sort the records using Java's built in sort method I think it is O(nlogn
 ##### Tests
 The test files test:
 - valid input cases
-- invalid input cases (end time earlier than start time, from file content format ...)
+- invalid input cases (end time earlier than start time, wrong file content format ...)
 - edge cases (overlapping intervals, gaps)
