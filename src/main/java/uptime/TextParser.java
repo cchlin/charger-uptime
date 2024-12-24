@@ -75,6 +75,7 @@ public class TextParser {
             }
         }
 
+        // if not returned by the for loop above, no charger is found
         throw new IllegalArgumentException("No charger found in stations: ChargerID=" + chargerID);
 
     }

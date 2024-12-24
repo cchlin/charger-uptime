@@ -14,13 +14,10 @@ public class Uptime {
         try {
             Map<Integer, Station> stations = TextParser.parse(filePath);
 
-            stations.entrySet().stream().sorted(Map.Entry.comparingByKey())
-                    .forEach(station -> {
-                       System.out.println(station.getKey() + " " + station.getValue().getStationUpTime());
-                    });
+            stations.entrySet().stream().sorted(Map.Entry.comparingByKey()) // sort by station id
+                    .forEach(station -> System.out.println(station.getKey() + " " + station.getValue().getStationUpTime()));
         } catch (Exception e) {
             System.err.println("ERROR");
-            return;
         }
     }
 }
